@@ -1,0 +1,75 @@
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:41<06:12, 41.36s/it] 20%|██        | 2/10 [01:25<05:37, 42.17s/it] 30%|███       | 3/10 [02:05<04:50, 41.44s/it] 40%|████      | 4/10 [02:46<04:07, 41.28s/it] 50%|█████     | 5/10 [03:25<03:24, 40.86s/it] 60%|██████    | 6/10 [04:07<02:44, 41.02s/it] 70%|███████   | 7/10 [04:48<02:03, 41.11s/it] 80%|████████  | 8/10 [05:29<01:22, 41.03s/it] 90%|█████████ | 9/10 [06:11<00:41, 41.23s/it]100%|██████████| 10/10 [06:50<00:00, 40.76s/it]
+PARAMETER ...
+Namespace(batch_size=12, gpu='0', log_dir='pointnet2_sem_seg', num_point=4096, num_votes=10, test_area=6, visual=True)
+The number of test data is: 1
+---- EVALUATION WHOLE SCENE----
+visualize [1/1] Area_6_hallway_222 ...
+[0.62615588 0.70324397 0.84161967 0.6246985  0.24653645 0.85918135
+ 0.39692287 0.28342865 0.66358038]
+Overall accuracy：83.20  Average F1 score：71.18 
+------- precision --------
+79.00 81.23 93.65 69.85 29.25 89.89 52.41 47.32 84.85 
+------- recall --------
+75.12 83.97 89.26 85.54 61.07 95.11 62.07 41.41 75.28 
+------- fscore--------
+77.01 82.58 91.40 76.90 39.56 92.43 56.83 44.17 79.78 
+------- confusion--------
+
+[[4.7400e+02 0.0000e+00 0.0000e+00 0.0000e+00 0.0000e+00 1.3200e+02
+  7.0000e+00 6.0000e+00 1.2000e+01]
+ [1.0000e+00 8.0167e+04 5.9980e+03 7.7000e+01 7.0100e+02 1.5780e+03
+  8.7600e+02 5.0150e+03 1.0600e+03]
+ [0.0000e+00 1.0299e+04 9.5507e+04 2.7400e+02 3.3500e+02 1.4200e+02
+  1.2600e+02 2.9000e+02 2.8000e+01]
+ [0.0000e+00 1.4400e+02 2.1000e+01 2.5900e+03 2.1000e+01 3.0000e+00
+  1.9000e+01 1.6900e+02 6.1000e+01]
+ [0.0000e+00 1.8700e+02 5.0000e+00 7.1000e+01 2.1710e+03 5.2000e+01
+  2.6000e+01 5.9300e+02 4.5000e+02]
+ [7.3000e+01 1.0350e+03 2.2600e+02 1.0800e+02 1.6500e+02 9.8024e+04
+  1.6460e+03 8.3600e+02 9.5300e+02]
+ [2.0000e+00 2.4600e+02 5.5000e+01 1.2500e+02 9.4000e+01 1.8500e+03
+  5.8820e+03 4.4700e+02 7.7600e+02]
+ [1.0000e+00 5.5190e+03 1.5000e+02 4.2500e+02 2.7930e+03 1.2490e+03
+  1.6100e+03 1.1745e+04 4.8740e+03]
+ [4.9000e+01 1.0930e+03 2.4000e+01 3.8000e+01 1.1420e+03 6.0180e+03
+  1.0320e+03 5.7170e+03 4.6012e+04]]
+Mean IoU of Area_6_hallway_222: 0.5828
+----------------------------
+------- F1 --------
+class Powerline , F: 0.770 
+class Low vegetation, F: 0.826 
+class Impervious surfaces, F: 0.914 
+class Car       , F: 0.769 
+class Fence/Hedge, F: 0.396 
+class Roof      , F: 0.924 
+class Facade    , F: 0.568 
+class Shrub     , F: 0.442 
+class Tree      , F: 0.798 
+
+------- presion--------
+class Powerline , presion: 0.751 
+class Low vegetation, presion: 0.840 
+class Impervious surfaces, presion: 0.893 
+class Car       , presion: 0.855 
+class Fence/Hedge, presion: 0.611 
+class Roof      , presion: 0.951 
+class Facade    , presion: 0.621 
+class Shrub     , presion: 0.414 
+class Tree      , presion: 0.753 
+
+------- recall--------
+class Powerline , recall: 0.790 
+class Low vegetation, recall: 0.812 
+class Impervious surfaces, recall: 0.936 
+class Car       , recall: 0.698 
+class Fence/Hedge, recall: 0.293 
+class Roof      , recall: 0.899 
+class Facade    , recall: 0.524 
+class Shrub     , recall: 0.473 
+class Tree      , recall: 0.849 
+
+eval point avg class F1: 0.711824
+eval point avg precision: 0.743115
+eval point avg recall: 0.697168
+eval whole scene point accuracy: 0.832047
+Done!
